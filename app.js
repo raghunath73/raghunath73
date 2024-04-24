@@ -28,8 +28,8 @@ app.get('/projects', (req, res) => {
   res.render('projects', { title: 'Projects', content: 'List of projects will be displayed here.' });
 });
 
-app.get('/contact', (req, res) => {
-  res.render('contact', { title: 'Contact', content: 'Contact information will be displayed here.' });
+app.get('/contacts', (req, res) => {
+  res.render('contacts', { title: 'Contact', content: 'Contact information will be displayed here.' });
 });
 
 app.listen(port, () => {
