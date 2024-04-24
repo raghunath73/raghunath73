@@ -1,0 +1,47 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+<h1>Contact</h1>
+<p>Contact information will be displayed here.</p>
+
+<!-- Social Media Links -->
+<div class="social-links">
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/raghunath73/"><img src="/home/user/portfolio/views/photos/linkedinlogo.png" alt="LinkedIn"></a>
+  
+  <!-- Github -->
+  <a href="https://github.com/raghunath73"><img src="path/to/github.png" alt="GitHub"></a>
+  
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/raghunath73/"><img src="path/to/instagram.png" alt="Instagram"></a>
+  
+  <!-- Facebook -->
+  <a href="https://www.facebook.com/raghunath23/"><img src="path/to/facebook.png" alt="Facebook"></a>
+</div>
+
+<!-- Gmail -->
+<a href="mailto:araghunathreddy73@gmail.com"><img src="path/to/gmail.png" alt="Gmail"></a>
+
+<!-- Phone -->
+<a href="tel:+919949230233"><img src="path/to/phone.png" alt="Phone"></a>
+
+<!-- Feedback Form -->
+<form id="feedbackForm">
+  <label for="feedback">Send Feedback:</label>
+  <input type="text" id="feedback" name="feedback" required>
+  <button type="submit">Submit</button>
+</form>
+
+<!-- Thank You Message (Initially Hidden) -->
+<p id="thankYouMessage" style="display: none;">Thanks for your feedback!</p>
+
+<script>
+  // JavaScript to handle form submission
+  document.getElementById("feedbackForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    
+    // Show the thank you message
+    document.getElementById("thankYouMessage").style.display = "block";
+    
+    // You can also add code here to submit the form data using AJAX or other techniques
+  });
+</script>
